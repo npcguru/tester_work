@@ -2,7 +2,7 @@
 <script>
 // ServiceWorkerのセットアップ
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/translate_c?anno=2&depth=1&hl=ja&rurl=translate.google.co.jp&sl=auto&sp=nmt4&tl=ja&u=https://npcguru.github.io/tester_work/sw.txt&xid=17259,15700023,15700124,15700149,15700186,15700190,15700201&usg=ALkJrhhh-G_YVveaNCuAIkaKouBJaRmVEQ', {scope: './'}).then(function(registration) {
+  navigator.serviceWorker.register('sw.js', {scope: './'}).then(function(registration) {
     // registration worked
     console.log('Registration succeeded.');
   }).catch(function(error) {
@@ -11,8 +11,7 @@ if ('serviceWorker' in navigator) {
   });
 };
 </script>
-<script src="./x.txt"></script>
-<script src="/x.txt"></script>
+<script src="./sw.js"></script>
 
 <!-- SVG画像の表示 -->
 <img src="img/hoge.svg" />
